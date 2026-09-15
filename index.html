@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prestige Private Client — Chauffeur &amp; Airport Transportation | GTA, Ontario</title>
+<meta name="description" content="Premium chauffeur and airport transportation across the Greater Toronto Area. Fixed pricing, professional chauffeurs, flight tracking, 24/7 service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="wordmark">Prestige <span>Private Client</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#locations">Locations</a>
+      <a href="#rates">Rates</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+19055550142" class="header-phone">905&nbsp;555&nbsp;0142</a>
+      <button class="btn btn-primary" data-open-booking>Book Now</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Private chauffeur service, done properly.</h1>
+        <p class="hero-sub">Professional, reliable transportation across the GTA and beyond — for airport transfers, business travel and the trips that matter.</p>
+        <ul class="hero-points">
+          <li>Fixed fares, quoted before you book</li>
+          <li>Licensed, vetted professional chauffeurs</li>
+          <li>Flights tracked, no matter the delay</li>
+        </ul>
+      </div>
+
+      <div class="booking-card" id="heroBooking">
+        <h2>Get an instant quote</h2>
+        <form class="booking-form" id="quickQuoteForm">
+          <div class="field">
+            <label for="qFrom">From</label>
+            <input type="text" id="qFrom" placeholder="Pickup address or airport" required>
+          </div>
+          <div class="field">
+            <label for="qTo">To</label>
+            <input type="text" id="qTo" placeholder="Destination address or airport" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="qDate">Date</label>
+              <input type="date" id="qDate" required>
+            </div>
+            <div class="field">
+              <label for="qTime">Time</label>
+              <input type="time" id="qTime" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="qPax">Passengers</label>
+            <select id="qPax">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Get instant quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip" aria-label="Why choose us">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <strong>Fixed &amp; transparent pricing</strong>
+        <span>No surge, no surprises</span>
+      </div>
+      <div class="trust-item">
+        <strong>Professional chauffeurs</strong>
+        <span>Licensed &amp; background-checked</span>
+      </div>
+      <div class="trust-item">
+        <strong>Flight tracking</strong>
+        <span>We adjust to your arrival</span>
+      </div>
+      <div class="trust-item">
+        <strong>24/7 service</strong>
+        <span>Every day of the year</span>
+      </div>
+    </div>
+    <p class="trust-disclaimer">Example service commitments — for illustration in this prototype.</p>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <h2>Services built around how you actually travel</h2>
+      <div class="services-grid">
+
+        <article class="service-card service-card--wide">
+          <h3>Airport Transfers</h3>
+          <p>Reliable transportation to and from Pearson, Billy Bishop and Hamilton airports, with flight tracking and a waiting chauffeur — not a text asking where you are.</p>
+          <a href="#airports" class="text-link">Learn more →</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Private Chauffeur</h3>
+          <p>Professional point-to-point transportation whenever you need it.</p>
+          <a href="#" class="text-link">Learn more →</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Corporate Transportation</h3>
+          <p>Executive travel for meetings, clients and business trips.</p>
+          <a href="#" class="text-link">Learn more →</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Hourly Chauffeur</h3>
+          <p>A vehicle and chauffeur on call for multiple stops or an extended day.</p>
+          <a href="#" class="text-link">Learn more →</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Weddings &amp; Events</h3>
+          <p>Premium transportation for the days that call for it.</p>
+          <a href="#" class="text-link">Learn more →</a>
+        </article>
+
+        <article class="service-card">
+          <h3>Long Distance</h3>
+          <p>Private transportation between cities, in comfort.</p>
+          <a href="#" class="text-link">Learn more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AIRPORTS ============ -->
+  <section class="airports" id="airports">
+    <div class="section-inner">
+      <h2>Airport transportation, handled properly</h2>
+      <div class="airports-layout">
+        <div class="airport-tabs" role="tablist" aria-label="Airports served">
+          <button class="airport-tab is-active" role="tab" aria-selected="true" data-airport="yyz">Toronto Pearson (YYZ)</button>
+          <button class="airport-tab" role="tab" aria-selected="false" data-airport="ytz">Billy Bishop (YTZ)</button>
+          <button class="airport-tab" role="tab" aria-selected="false" data-airport="yhm">Hamilton (YHM)</button>
+        </div>
+        <ul class="airport-features">
+          <li><strong>Flight tracking</strong> — your pickup time adjusts automatically if your flight does.</li>
+          <li><strong>Meet &amp; greet</strong> — your chauffeur meets you at arrivals, not the curb.</li>
+          <li><strong>Complimentary waiting period</strong> — time built in to clear customs and baggage.</li>
+          <li><strong>Terminal pickup instructions</strong> — sent by text before you land.</li>
+        </ul>
+      </div>
+      <p class="trust-disclaimer">Demonstration content for this prototype — final copy to be confirmed per airport.</p>
+    </div>
+  </section>
+
+  <!-- ============ FLEET ============ -->
+  <section class="fleet" id="fleet">
+    <div class="section-inner">
+      <h2>The fleet</h2>
+      <div class="fleet-grid" id="fleetGrid"><!-- populated by script.js from vehicleData --></div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREAS ============ -->
+  <section class="locations" id="locations">
+    <div class="section-inner">
+      <h2>Where we drive</h2>
+      <p class="section-lead">Serving the Greater Toronto and Golden Horseshoe area.</p>
+      <ul class="location-pills" id="locationPills"><!-- populated by script.js --></ul>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR ROUTES ============ -->
+  <section class="routes" id="rates">
+    <div class="section-inner">
+      <h2>Popular routes</h2>
+      <div class="routes-list" id="routesList"><!-- populated by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="about">
+    <div class="section-inner">
+      <h2>What clients say</h2>
+      <p class="section-lead reviews-note">Demo testimonials shown for prototype purposes — will be replaced with genuine client reviews.</p>
+      <div class="reviews-grid">
+        <blockquote class="review-card">
+          <p>“On time for a 4am pickup, no messages back and forth. The car was spotless and the driver knew exactly where to go at Pearson.”</p>
+          <cite>— Demo review, Corporate traveller</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <p>“Booked an hourly chauffeur for a full day of client meetings. Easy to change stops on the fly.”</p>
+          <cite>— Demo review, Business client</cite>
+        </blockquote>
+        <blockquote class="review-card">
+          <p>“Used them for our wedding party. Every car arrived early and the drivers were dressed the part.”</p>
+          <cite>— Demo review, Event booking</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="section-inner section-inner--narrow">
+      <h2>Frequently asked questions</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">How do I book a chauffeur?</button>
+          <div class="accordion-panel"><p>Use the quote widget at the top of this page, or the Book Now button — enter your pickup, destination, date and time to get started.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Do you provide airport transfers?</button>
+          <div class="accordion-panel"><p>Yes — to and from Toronto Pearson, Billy Bishop and Hamilton International, with flight tracking included.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Do you track flights?</button>
+          <div class="accordion-panel"><p>Yes, your flight number lets us adjust your pickup time automatically for early or delayed arrivals.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">How long will my chauffeur wait at the airport?</button>
+          <div class="accordion-panel"><p>A complimentary waiting period is included with every airport pickup to allow time for customs and baggage claim.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Can I book a round trip?</button>
+          <div class="accordion-panel"><p>Yes — select "Round Trip" as your trip type during booking.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Do you provide child seats?</button>
+          <div class="accordion-panel"><p>Child and booster seats can be requested during the trip details step of booking.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Can I book hourly service?</button>
+          <div class="accordion-panel"><p>Yes — choose "Hourly" as your trip type for a chauffeur and vehicle across multiple stops.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">What payment methods are accepted?</button>
+          <div class="accordion-panel"><p>This is a prototype — payment methods will be confirmed on the final site.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <a href="#top" class="wordmark wordmark--light">Prestige <span>Private Client</span></a>
+      <p>Premium chauffeur &amp; airport transportation across the GTA.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#locations">Locations</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+19055550142">905 555 0142</a>
+      <a href="mailto:reservations@example.com">reservations@example.com</a>
+      <span>Serving the GTA &amp; Golden Horseshoe</span>
+    </div>
+  </div>
+  <p class="footer-legal">This is a prototype site for UX testing purposes. All pricing, reviews and content shown are demonstration examples.</p>
+</footer>
+
+<!-- ============ MOBILE STICKY BAR ============ -->
+<div class="mobile-bar" aria-label="Quick actions">
+  <a href="tel:+19055550142" class="mobile-bar-btn">
+    <span class="mobile-bar-icon">☎</span> Call
+  </a>
+  <a href="sms:+19055550142" class="mobile-bar-btn">
+    <span class="mobile-bar-icon">✉</span> Text
+  </a>
+  <button class="mobile-bar-btn mobile-bar-btn--primary" data-open-booking>
+    <span class="mobile-bar-icon">▸</span> Book
+  </button>
+</div>
+
+<!-- ============ BOOKING FLOW OVERLAY ============ -->
+<div class="booking-overlay" id="bookingOverlay" aria-hidden="true">
+  <div class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+
+    <div class="booking-modal-header">
+      <div class="progress-track" id="progressTrack">
+        <span class="progress-step is-active" data-step="1">1</span>
+        <span class="progress-step" data-step="2">2</span>
+        <span class="progress-step" data-step="3">3</span>
+        <span class="progress-step" data-step="4">4</span>
+        <span class="progress-step" data-step="5">5</span>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="Close booking">✕</button>
+    </div>
+
+    <div class="booking-modal-body">
+
+      <!-- STEP 1: TRIP -->
+      <section class="booking-step is-active" data-step="1">
+        <h2 id="bookingTitle">Plan your trip</h2>
+        <div class="field">
+          <label for="s1From">Pickup location</label>
+          <input type="text" id="s1From" placeholder="Address, city or airport">
+        </div>
+        <div class="field">
+          <label for="s1To">Destination</label>
+          <input type="text" id="s1To" placeholder="Address, city or airport">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="s1Date">Date</label>
+            <input type="date" id="s1Date">
+          </div>
+          <div class="field">
+            <label for="s1Time">Time</label>
+            <input type="time" id="s1Time">
+          </div>
+        </div>
+        <div class="field">
+          <label for="s1Pax">Passengers</label>
+          <select id="s1Pax">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Trip type</label>
+          <div class="segmented" id="tripType">
+            <button type="button" class="segmented-btn is-active" data-value="One Way">One Way</button>
+            <button type="button" class="segmented-btn" data-value="Round Trip">Round Trip</button>
+            <button type="button" class="segmented-btn" data-value="Hourly">Hourly</button>
+          </div>
+        </div>
+        <div class="step-actions">
+          <span></span>
+          <button class="btn btn-primary" data-next>Continue</button>
+        </div>
+      </section>
+
+      <!-- STEP 2: VEHICLE SELECTION -->
+      <section class="booking-step" data-step="2">
+        <h2>Choose your vehicle</h2>
+        <div class="vehicle-select-grid" id="vehicleSelectGrid"><!-- populated by script.js --></div>
+        <div class="step-actions">
+          <button class="btn btn-ghost" data-back>Back</button>
+          <span></span>
+        </div>
+      </section>
+
+      <!-- STEP 3: TRIP DETAILS -->
+      <section class="booking-step" data-step="3">
+        <h2>Trip details</h2>
+        <p class="step-lead">All fields below are optional.</p>
+        <div class="field-row">
+          <div class="field">
+            <label for="s3Flight">Flight number <span class="optional-tag">Optional</span></label>
+            <input type="text" id="s3Flight" placeholder="e.g. AC 891">
+          </div>
+          <div class="field">
+            <label for="s3Airline">Airline <span class="optional-tag">Optional</span></label>
+            <input type="text" id="s3Airline" placeholder="e.g. Air Canada">
+          </div>
+        </div>
+        <div class="field checkbox-field">
+          <label><input type="checkbox" id="s3MeetGreet"> Meet &amp; greet at arrivals</label>
+        </div>
+        <div class="field">
+          <label for="s3Luggage">Number of luggage <span class="optional-tag">Optional</span></label>
+          <select id="s3Luggage">
+            <option>0</option><option>1</option><option>2</option><option>3</option><option>4+</option>
+          </select>
+        </div>
+        <div class="field checkbox-field">
+          <label><input type="checkbox" id="s3ChildSeat"> Child / booster seat needed</label>
+        </div>
+        <div class="field">
+          <label for="s3Stops">Additional stops <span class="optional-tag">Optional</span></label>
+          <input type="text" id="s3Stops" placeholder="Any extra stops along the way">
+        </div>
+        <div class="field">
+          <label for="s3Notes">Special requests <span class="optional-tag">Optional</span></label>
+          <textarea id="s3Notes" rows="2" placeholder="Anything else we should know"></textarea>
+        </div>
+        <div class="step-actions">
+          <button class="btn btn-ghost" data-back>Back</button>
+          <button class="btn btn-primary" data-next>Continue</button>
+        </div>
+      </section>
+
+      <!-- STEP 4: CUSTOMER INFO -->
+      <section class="booking-step" data-step="4">
+        <h2>Your information</h2>
+        <div class="field">
+          <label for="s4Name">Full name</label>
+          <input type="text" id="s4Name" placeholder="Jane Smith">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="s4Phone">Phone number</label>
+            <input type="tel" id="s4Phone" placeholder="(905) 555-0142">
+          </div>
+          <div class="field">
+            <label for="s4Email">Email address</label>
+            <input type="email" id="s4Email" placeholder="jane@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="s4Company">Company name <span class="optional-tag">Optional</span></label>
+          <input type="text" id="s4Company" placeholder="For corporate bookings">
+        </div>
+        <div class="field checkbox-field">
+          <label><input type="checkbox" id="s4Updates" checked> Send me booking updates by email/text</label>
+        </div>
+        <div class="step-actions">
+          <button class="btn btn-ghost" data-back>Back</button>
+          <button class="btn btn-primary" data-next>Continue</button>
+        </div>
+      </section>
+
+      <!-- STEP 5: REVIEW -->
+      <section class="booking-step" data-step="5">
+        <h2>Review your booking</h2>
+        <div class="summary-card" id="summaryCard"><!-- populated by script.js --></div>
+        <div class="step-actions">
+          <button class="btn btn-ghost" data-back>Back</button>
+          <button class="btn btn-primary" id="confirmBookingBtn">Confirm booking</button>
+        </div>
+      </section>
+
+      <!-- STEP 6: CONFIRMATION -->
+      <section class="booking-step" data-step="6">
+        <div class="confirmation">
+          <div class="confirmation-mark">✓</div>
+          <h2>Booking confirmed</h2>
+          <p id="confirmationThanks">Thank you.</p>
+          <p class="confirmation-sub">Your chauffeur reservation has been confirmed. A demo confirmation would normally be sent by email and text.</p>
+          <div class="summary-card" id="confirmationCard"><!-- populated by script.js --></div>
+          <div class="step-actions step-actions--center">
+            <button class="btn btn-ghost" id="viewBookingBtn">View booking</button>
+            <button class="btn btn-primary" id="newBookingBtn">Book another ride</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
